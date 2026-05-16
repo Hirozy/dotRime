@@ -9,7 +9,7 @@ patch:
     switch_key:
       Control_L: noop
       Control_R: noop
-      Shift_L: commit_code
+      Shift_L: noop
       Shift_R: noop
 
   switcher:
