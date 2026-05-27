@@ -27,6 +27,8 @@ patch:
     language: wanxiang-lts-zh-hans
     collocation_max_length: 5
     collocation_min_length: 2
+    initial_quality: 0.8  # 降低语言模型权重，让用户词典调频更明显（默认为1.0）
   translator/contextual_suggestions: true
   translator/max_homophones: 7
   translator/max_homographs: 7
+  translator/enable_user_dict: true  # 显式启用用户词典，支持动态调频
