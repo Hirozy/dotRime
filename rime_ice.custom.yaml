@@ -16,18 +16,18 @@ patch:
     - name: ascii_punct
       reset: 0
       states: ["。，", ", ."]
-    - options: ["UTF8", "GBK", "GB2312"]
+    - name: emoji
+      reset: 1
+      states: ["💀", "😄"]
+    - name: search_single_char
       reset: 0
-      states:
-        - UTF-8
-        - GBK
-        - GB2312
+      states: ["正常", "单字"]
+      abbrev: ["词", "单"]
 
   grammar:
     language: wanxiang-lts-zh-hans
     collocation_max_length: 5
     collocation_min_length: 2
-    initial_quality: 0.8  # 降低语言模型权重，让用户词典调频更明显（默认为1.0）
   translator/contextual_suggestions: true
   translator/max_homophones: 7
   translator/max_homographs: 7
