@@ -19,8 +19,4 @@ patch:
     hotkeys:
       - F4
     option_list_separator: "\x10/"
-    save_options:
-      - full_shape
-      - ascii_punct
-      - simplification
-      - extended_charset
+    save_options: [] # 清空默认配置继承的保存选项
